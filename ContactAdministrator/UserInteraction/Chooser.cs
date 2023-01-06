@@ -17,7 +17,7 @@
       Console.WriteLine("1 für Kontakt anlegen!");
       Console.WriteLine("2 für Kontakt bearbeiten!");
       Console.WriteLine("3 für Kontakt löschen!");
-      Console.WriteLine("0 zum beenden des Programmes!");
+      Console.WriteLine("0/Enter zum beenden des Programmes!");
     }
 
     private int IfNumber(string choice)

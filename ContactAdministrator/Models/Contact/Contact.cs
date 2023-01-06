@@ -15,6 +15,14 @@
 
     /// <summary>Gets or sets the number.</summary>
     /// <value>The number.</value>
+    public string MobileNumber { get; set; }
+
+    /// <summary>
+    ///   <para>
+    /// Gets or sets the number.
+    /// </para>
+    /// </summary>
+    /// <value>The number.</value>
     public string Number { get; set; }
 
     /// <summary>Gets or sets the address.</summary>
