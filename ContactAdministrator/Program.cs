@@ -1,4 +1,6 @@
-﻿using ContactAdministrator.UserInteraction;
+﻿using ContactAdministrator.ContactManipulation;
+using ContactAdministrator.Models.Contact;
+using ContactAdministrator.UserInteraction;
 
 try
 {
@@ -40,12 +42,11 @@ void WriteException(Exception ex)
 void HandleContact(int choice)
 {
   Console.Clear();
+
   switch(choice)
   {
     case 1:
-      Console.WriteLine("Es wurde eins anlegen gedrückt!");
-      Console.WriteLine("Bitte Taste drücken!!");
-      Console.ReadKey();
+      AddContact.Add();
       break;
 
     case 2:

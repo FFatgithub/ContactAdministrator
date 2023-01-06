@@ -17,5 +17,9 @@
     /// <summary>Gets or sets the land.</summary>
     /// <value>The land.</value>
     public string Land { get; set; }
+
+    /// <summary>Gets or sets the zip.</summary>
+    /// <value>The zip.</value>
+    public string Zip { get; set; }
   }
 }
