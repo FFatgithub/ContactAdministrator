@@ -1,6 +1,14 @@
-﻿try
+﻿using ContactAdministrator.UserInteraction;
+
+try
 {
-  throw new Exception("Fehler");
+  int choice = 1;
+  Chooser chooser = new Chooser();
+  while(choice > 0)
+  {
+    choice = chooser.Show();
+    HandleContact(choice);
+  }
 }
 catch(Exception ex)
 {
@@ -27,4 +35,33 @@ void WriteException(Exception ex)
   Console.WriteLine("Stack:");
   Console.ForegroundColor = ConsoleColor.Gray;
   Console.WriteLine(ex.Message);
+}
+
+void HandleContact(int choice)
+{
+  Console.Clear();
+  switch(choice)
+  {
+    case 1:
+      Console.WriteLine("Es wurde eins anlegen gedrückt!");
+      Console.WriteLine("Bitte Taste drücken!!");
+      Console.ReadKey();
+      break;
+
+    case 2:
+      Console.WriteLine("Es wurde bearbeiten gedrückt!");
+      Console.WriteLine("Bitte Taste drücken!!");
+      Console.ReadKey();
+      break;
+
+    case 3:
+      Console.WriteLine("Es wurde löschen gedrückt!");
+      Console.WriteLine("Bitte Taste drücken!!");
+      Console.ReadKey();
+      break;
+
+    default:
+      break;
+  }
+  Console.Clear();
 }
